@@ -15,7 +15,7 @@ public class ApiGatewayApplication {
 		new SpringApplicationBuilder(ApiGatewayApplication.class).web(true).run(args);
 	}
 
-	@Bean
+	//@Bean
 	public AccessFilter accessFilter(){
 		return new AccessFilter();
 	}

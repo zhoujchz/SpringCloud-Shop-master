@@ -32,6 +32,7 @@ public class CategoryController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = "application/json")
     public Category get(@PathVariable Long id) {
+    	logger.info("=============id="+id);
         ServiceInstance instance = client.getLocalServiceInstance();
         Category category = categoryService.findOne(id);
         logger.info("/category, host:" + instance.getHost() + ", serviceId: " + instance.getServiceId() + ",category id: " + category.getId() + ",category name: " + category.getName());
