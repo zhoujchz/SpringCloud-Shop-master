@@ -16,7 +16,7 @@ public class SecurityConfig  {//extends WebSecurityConfigurerAdapter
 //                .antMatchers("/resources/**").permitAll()
 //                .antMatchers("/eureka-web/users/login").permitAll()
 //                .anyRequest().authenticated()
-//                .and()
+//                .and() 
 //                .httpBasic()//<1>
 //                .and()
 //                .logout().permitAll();
